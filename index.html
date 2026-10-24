@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Aura Workspace Backup</title><style>body{font:18px/1.65 system-ui,sans-serif;color:#182838;background:#f5f7fa;margin:0}main{max-width:760px;margin:48px auto;padding:36px;background:white;border-radius:16px}h1{line-height:1.2}h2{font-size:1.2em;margin-top:28px}a{color:#0759a4}small{color:#526273}nav{margin-top:32px;border-top:1px solid #dde3e9;padding-top:18px}@media(max-width:800px){main{margin:12px;padding:22px}}</style></head><body><main><h1>Aura Workspace Backup</h1>
+<p>A personal desktop backup and restore tool for the account owner’s Aura development workspace.</p>
+<p>The tool creates encrypted backups locally and copies them to a dedicated folder in the Google Drive account the owner authorizes. It can check and restore those backup files. It is not a public file-sharing or account-registration service.</p>
+<h2>Google Drive access</h2>
+<p>The tool requests the <code>drive.file</code> permission to create and manage the files and folders authorized for this application. It does not request access to every file in the owner’s Drive.</p>
+<h2>Backup and restore</h2>
+<p>Backup contents are encrypted by restic before upload. rclone transfers the encrypted repository using the owner’s OAuth authorization. Google Drive still processes account, permission and transfer metadata needed to provide its service.</p>
+<h2>Operator and support</h2>
+<p>This is a personal-use tool maintained by its account owner. Use the support email displayed on the Google authorization screen for questions about this OAuth application.</p>
+<nav><a href="privacy.html">Privacy policy</a></nav></main></body></html>
